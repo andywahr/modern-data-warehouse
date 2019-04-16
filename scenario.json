@@ -1,0 +1,138 @@
+{
+    "Name": "Modern Data Warehouse",
+    "Description": "Cloud native Data Warehouse strategy",
+    "InfrastructureLocation": {
+        "Repo": "https://github.com/andywahr/contosotravel-web.git",
+        "Branch": "master",
+        "BuildYaml": "build.yaml"
+    },
+    "LoadTest": {
+        "Repo": "https://github.com/andywahr/contosotravel-web.git",
+        "Branch": "master",
+        "BuildYaml": "loadTestBuild.yaml"
+    },
+    "DevOpsPlugins": [
+    ],
+    "Categories": [
+        {
+            "Title": "Base",
+            "Id": "base",
+            "Choose": "All",
+            "Services": [
+                {
+                    "Title": "Azure DevOps",
+                    "Image": "vs.png",
+                    "Id": "vsts",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Log Analytics",
+                    "Image": "log-analytics.png",
+                    "Id": "loganalytics",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Key Vault",
+                    "Image": "keyvault.png",
+                    "Id": "keyvault",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Data factory",
+                    "Image": "http://datafactory.png",
+                    "Id": "datafactory",
+                    "IsAvailable": true
+                }
+            ]
+        },
+        {
+            "Title": "Ingestion Storage",
+            "Id": "ingestion-storage",
+            "Choose": "Any",
+            "Services": [
+                {
+                    "Title": "Data Lake Store",
+                    "Id": "data-lake",
+                    "Image": "http://datalake.png",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Azure Storage",
+                    "Id": "storage",
+                    "Image": "storage.png",
+                    "IsAvailable": true
+                }
+            ]
+        },
+        {
+            "Title": "Data Processing",
+            "Id": "data-processing",
+            "Choose": "One",
+            "Services": [
+                {
+                    "Title": "Azure Databricks",
+                    "Id": "databricks",
+                    "Image": "http://databricks.png",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "HDInsight",
+                    "Id": "hdinsight",
+                    "Image": "http://hdinsight.png",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Azure Data Lake Analytics",
+                    "Id": "dataanalytics",
+                    "Image": "http://dataanalytics.png",
+                    "IsAvailable": true
+                }
+            ]
+        },
+        {
+            "Title": "Operational Data",
+            "Id": "operational-data",
+            "Choose": "One",
+            "Services": [
+                {
+                    "Title": "SQL Database",
+                    "Id": "sql",
+                    "Image": "sql.png",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Cosmos DB",
+                    "Id": "cosmos",
+                    "Image": "cosmos.png",
+                    "IsAvailable": true
+                }
+            ]
+        },
+        {
+            "Title": "Serving storage",
+            "Id": "service-storage",
+            "Choose": "One",
+            "Services": [
+                {
+                    "Title": "Cosmos DB",
+                    "Id": "cosmos",
+                    "Image": "cosmos.png",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Azure SQL Data warehouse",
+                    "Id": "sqlwarehouse",
+                    "Image": "http://sqldw.png",
+                    "IsAvailable": true
+                },
+                {
+                    "Title": "Azure Analysis Services",
+                    "Id": "aas",
+                    "Image": "http://aas.png",
+                    "IsAvailable": true
+                }
+
+            ]
+        }
+    ]
+}
