@@ -84,7 +84,7 @@
                 {
                     "Title": "Azure Data Lake Analytics",
                     "Id": "dataanalytics",
-                    "Image": "https://raw.githubusercontent.com/andywahr/modern-data-warehouse/master/dataanalytics.png",
+                    "Image": "https://raw.githubusercontent.com/andywahr/modern-data-warehouse/master/datalakeanalytics.png",
                     "IsAvailable": true
                 }
             ]
