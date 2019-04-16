@@ -48,7 +48,7 @@
         {
             "Title": "Ingestion Storage",
             "Id": "ingestion-storage",
-            "Choose": "Any",
+            "Choose": "One",
             "Services": [
                 {
                     "Title": "Data Lake Store",
